@@ -2,6 +2,8 @@ const router = require('express').Router();
 const { Blog, User } = require('../models');
 const withAuth = require('../utils/auth');
 
+
+// THIS WORKS!
 router.get('/', async (req, res) => {
   try {
     // Get all blogs and JOIN with user data
@@ -27,6 +29,7 @@ router.get('/', async (req, res) => {
   }
 });
 
+// THIS WORKS!
 router.get('/blog/:id', async (req, res) => {
   try {
     const blogData = await Blog.findByPk(req.params.id, {
@@ -49,6 +52,7 @@ router.get('/blog/:id', async (req, res) => {
   }
 });
 
+// THIS WORKS!
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
   try {
@@ -69,6 +73,7 @@ router.get('/profile', withAuth, async (req, res) => {
   }
 });
 
+// THIS WORKS
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
