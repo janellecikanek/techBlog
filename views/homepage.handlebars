@@ -1,20 +1,36 @@
-<!-- Loop over each object in the projects array -->
-{{#each blogs as |blog| }}
-<div class="row mb-4 blog">
-  <div class="col-md-5">
-    <h2>
-      <a href="/blog/{{blog.id}}">{{blog.title}}</a>
-    </h2>
-    <p>
-      <span class="content">{{content}}</span>
-   
-    </p>
-    <p>Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
+<!-- Loop over each object in the blogs array -->
+{{#each blogs as |blog|}}
+  <div class="row mb-4 blog">
+    <div class="col-md-5">
+      <h2>
+        <a href="/blog/{{blog.id}}">{{blog.title}}</a>
+      </h2>
+      <p>
+        <span class="content">{{content}}</span>
+
+      </p>
+      <p>Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
+    </div>
+    <div class="col-md-7">
+      <p>
+        {{blog.description}}
+      </p>
+    </div>
   </div>
-  <div class="col-md-7">
-    <p>
-      {{blog.description}}
-    </p>
+{{/each}}
+
+<!-- Loop over each object in the comments array -->
+{{#each comments as |comment|}}
+  <div class="row mb-4 blog">
+    <div class="col-md-5">
+      <h2>
+        <a href="/comment/{{comment.id}}">{{comment.comment_content}}</a>
+      </h2>
+      <p>
+        <span class="content">{{comment_content}}</span>
+
+      </p>
+      <p>Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
+    </div>
   </div>
-</div>
 {{/each}}
