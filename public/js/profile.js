@@ -3,6 +3,7 @@ const newFormHandler = async (event) => {
   
     const title = document.querySelector('#blog-title').value.trim();
     const content = document.querySelector('#blog-content').value.trim();
+    // const comment = document.querySelector('#comment-content').value.trim();
     //const id = document.querySelector('#blog-id').value.trim();
   
     if (title && content) {

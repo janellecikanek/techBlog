@@ -18,19 +18,3 @@
     </div>
   </div>
 {{/each}}
-
-<!-- Loop over each object in the comments array -->
-{{#each comments as |comment|}}
-  <div class="row mb-4 blog">
-    <div class="col-md-5">
-      <h2>
-        <a href="/comment/{{comment.id}}">{{comment.comment_content}}</a>
-      </h2>
-      <p>
-        <span class="content">{{comment_content}}</span>
-
-      </p>
-      <p>Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
-    </div>
-  </div>
-{{/each}}
