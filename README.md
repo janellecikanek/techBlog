@@ -36,7 +36,7 @@ This project utilizes express-handlebars, MySQL2, Sequelize, dotenv, bcrypt, exp
 
 ## Usage
 
-https://pacific-plains-32281.herokuapp.com/login
+https://pacific-plains-32281.herokuapp.com/
 
 ![alt screen shot](https://file%2B.vscode-resource.vscode-cdn.net/Users/janellecikanek/Desktop/techBlog/images/TECHBLOG.png?version%3D1670555695845)
 ## Credits
