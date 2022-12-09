@@ -21,7 +21,7 @@ When I click on one of my existing posts in the dashboard then I am able to dele
 When I click on the logout option in the navigation thenI am signed out of the site.
 When I am idle on the site for more than a set time then I am able to view comments but I am prompted to log in again before I can add, update, or delete comments.
 
-## Table of Contents (Optional)
+## Table of Contents
 
 If your README is long, add a table of contents to make it easy for users to find what they need.
 
