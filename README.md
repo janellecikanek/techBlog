@@ -39,7 +39,7 @@ https://pacific-plains-32281.herokuapp.com/
 ![alt screen shot](https://file%2B.vscode-resource.vscode-cdn.net/Users/janellecikanek/Desktop/techBlog/images/TECHBLOG.png?version%3D1670555695845)
 ## Credits
 
-No other collaborators at this time.
+Janelle Cikanek https://github.com/janellecikanek
 
 ## License
 
